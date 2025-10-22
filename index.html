@@ -1,0 +1,3498 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eva Nails & Leshes | Luxury & Class</title>
+    <meta
+      name="description"
+      content="Eva Nails & Leshes - Luxurious, spa-quality nail services. Book now to experience elegance and sophistication."
+    />
+    <meta name="theme-color" content="#fcf9f4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/6d2716b1d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: "#191814", // Dark text
+              gold: "#d9a29b", // Warm accent
+              champagne: "#000000", // Light background
+              cocoa: "#dbdad6", // Medium text
+              accent: "#ecd0c5", // Soft accent
+              white: "#ffffff",
+            },
+            fontFamily: {
+              sans: ["Montserrat", "ui-sans-serif", "system-ui", "sans-serif"],
+              display: ["Montserrat", "serif"],
+            },
+            boxShadow: {
+              glow: "0 0 0 1px rgba(217,162,155,0.25), 0 10px 30px rgba(25,24,20,0.15)",
+            },
+            backgroundImage: {
+              "lux-gradient":
+                "linear-gradient(135deg, #fcf9f4 0%, #ecd0c5 60%, #fcf9f4 100%)",
+              "gold-gradient":
+                "linear-gradient(90deg, #d9a29b 0%, #ecd0c5 50%, #d9a29b 100%)",
+              noise:
+                "url('data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'160\\' height=\\'160\\' viewBox=\\'0 0 160 160\\'><filter id=\\'n\\'><feTurbulence type=\\'fractalNoise\\' baseFrequency=\\'0.9\\' numOctaves=\\'2\\' stitchTiles=\\'stitch\\'/><feColorMatrix type=\\'saturate\\' values=\\'0\\'/><feComponentTransfer><feFuncA type=\\'table\\' tableValues=\\'0 0 0 0.02 0\\'/></feComponentTransfer></filter><rect width=\\'100%\\' height=\\'100%\\' filter=\\'url(%23n)\\'/></svg>')",
+            },
+            animation: {
+              fadeInUp: "fadeInUp 0.8s ease-out both",
+              shimmer: "shimmer 2.5s linear infinite",
+            },
+            keyframes: {
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(12px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              shimmer: {
+                "0%": { backgroundPosition: "-200% 0" },
+                "100%": { backgroundPosition: "200% 0" },
+              },
+            },
+            container: {
+              center: true,
+              padding: "1rem",
+              screens: {
+                sm: "640px",
+                md: "768px",
+                lg: "1024px",
+                xl: "1200px",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+    <script>
+      // Mobile sidebar interactions
+      (function () {
+        document.addEventListener("DOMContentLoaded", function () {
+          var openBtn = document.getElementById("mobile-menu-button");
+          var sidebar = document.getElementById("mobile-sidebar");
+          var backdrop = document.getElementById("sidebar-backdrop");
+          var panel = document.getElementById("sidebar-panel");
+          var closeBtn = document.getElementById("close-sidebar");
+          function openSidebar() {
+            if (!sidebar) return;
+            sidebar.classList.remove("hidden");
+            document.body.classList.add("sidebar-open");
+            setTimeout(function () {
+              sidebar.classList.add("show");
+            }, 0);
+            // toggle icons
+            var menuI = document.getElementById("menu-icon");
+            var closeI = document.getElementById("close-icon");
+            if (menuI && closeI) {
+              menuI.classList.add("hidden");
+              closeI.classList.remove("hidden");
+            }
+          }
+          function closeSidebar() {
+            if (!sidebar) return;
+            sidebar.classList.remove("show");
+            document.body.classList.remove("sidebar-open");
+            setTimeout(function () {
+              sidebar.classList.add("hidden");
+            }, 250);
+            var menuI = document.getElementById("menu-icon");
+            var closeI = document.getElementById("close-icon");
+            if (menuI && closeI) {
+              closeI.classList.add("hidden");
+              menuI.classList.remove("hidden");
+            }
+          }
+          if (openBtn) openBtn.addEventListener("click", openSidebar);
+          if (backdrop) backdrop.addEventListener("click", closeSidebar);
+          if (closeBtn) closeBtn.addEventListener("click", closeSidebar);
+          // Close on nav link click
+          document.querySelectorAll("#mobile-sidebar a").forEach(function (a) {
+            a.addEventListener("click", closeSidebar);
+          });
+        });
+      })();
+    </script>
+  </head>
+  <body
+    class="bg-white text-white font-sans antialiased selection:bg-gold/20 selection:text-white"
+  >
+    <!-- Decorative background noise overlay -->
+    <div
+      class="pointer-events-none fixed inset-0 bg-noise opacity-[0.08]"
+    ></div>
+
+    <!-- Header -->
+    <header>
+      <nav
+        class="fixed top-0 left-0 w-full z-50 bg-black/60 backdrop-blur-sm border-b border-[#ffd7d8]/30 shadow-lg"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center space-x-2">
+              <img
+                src="./img/logo.jpg"
+                alt="Eva Nails & Lashes Logo"
+                class="w-12 h-12 rounded-full shadow-lg border-2 border-[#ffd7d8] bg-white object-contain"
+                loading="lazy"
+              />
+              <h2
+                class="text-xl md:text-2xl font-bold tracking-wide mb-2"
+                style="
+                  background: linear-gradient(to bottom, #b88b28, #EDCA7B, #b88b28);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  color: transparent;
+                "
+              >
+                EVA Nails & Lashes
+              </h2>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <ul class="hidden md:flex gap-2 items-center">
+              <li>
+                <a
+                  href="#about"
+                  class="px-4 py-2 rounded-full font-semibold text-lg md:text-xl transition-colors relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffd7d8]/60 hover:text-[#e9717c]"
+                  style="color: #fff"
+                >
+                  About
+                  <span
+                    class="pointer-events-none absolute left-4 right-4 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-[#ffd7d8] to-transparent scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="px-4 py-2 rounded-full font-semibold text-lg md:text-xl transition-colors relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffd7d8]/60 hover:text-[#e9717c]"
+                  style="color: #fff"
+                >
+                  Services
+                  <span
+                    class="pointer-events-none absolute left-4 right-4 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-[#ffd7d8] to-transparent scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="px-4 py-2 rounded-full font-semibold text-lg md:text-xl transition-colors relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffd7d8]/60 hover:text-[#e9717c]"
+                  style="color: #fff"
+                >
+                  Gallery
+                  <span
+                    class="pointer-events-none absolute left-4 right-4 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-[#ffd7d8] to-transparent scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="px-4 py-2 rounded-full font-semibold text-lg md:text-xl transition-colors relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffd7d8]/60 hover:text-[#e9717c]"
+                  style="color: #fff"
+                >
+                  Testimonials
+                  <span
+                    class="pointer-events-none absolute left-4 right-4 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-[#ffd7d8] to-transparent scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  class="px-4 py-2 rounded-full font-semibold text-lg md:text-xl transition-colors relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffd7d8]/60 hover:text-[#e9717c]"
+                  style="color: #fff"
+                >
+                  FAQs
+                  <span
+                    class="pointer-events-none absolute left-4 right-4 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-[#ffd7d8] to-transparent scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="px-4 py-2 rounded-full font-semibold text-lg md:text-xl transition-colors relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffd7d8]/60 hover:text-[#e9717c]"
+                  style="color: #fff"
+                >
+                  Contact
+                  <span
+                    class="pointer-events-none absolute left-4 right-4 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-[#ffd7d8] to-transparent scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+                  ></span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Mobile Nav Button -->
+            <div class="md:hidden">
+              <button
+                id="mobile-menu-button"
+                type="button"
+                aria-label="Open menu"
+                class="text-[#fff] hover:text-[#e9717c] focus:outline-none focus:text-[#e9717c] transition-colors duration-300"
+              >
+                <svg
+                  id="menu-icon"
+                  class="w-7 h-7 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 7h16M4 12h16M4 17h16"
+                  />
+                </svg>
+                <svg
+                  id="close-icon"
+                  class="w-7 h-7 transition-transform duration-300 hidden"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar" class="fixed inset-0 z-50 hidden">
+      <!-- Backdrop -->
+      <div
+        id="sidebar-backdrop"
+        class="fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity duration-300 opacity-0"
+      ></div>
+
+      <!-- Sidebar Panel -->
+      <div
+        id="sidebar-panel"
+        class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-black shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <!-- Sidebar Header -->
+        <div
+          class="flex items-center justify-between p-6 border-b border-[#edca7b]/40"
+        >
+          <h2 class="text-xl font-bold text-[#edca7b]">Menu</h2>
+          <button
+            id="close-sidebar"
+            class="text-[#edca7b] hover:text-white transition-colors duration-300"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Sidebar Content -->
+        <div class="flex flex-col h-full">
+          <!-- Navigation Links -->
+          <nav class="flex-1 px-6 py-8">
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="mobile-nav-link group flex items-center px-4 py-3 rounded-lg hover:bg-[#edca7b]/10 hover:text-[#edca7b] transition-all duration-300"
+                  style="color: #fff"
+                >
+                  <svg
+                    class="w-5 h-5 mr-3 group-hover:scale-110 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12h6m-6 4h6M5 8h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2zm4-4h6a2 2 0 012 2v2H7V6a2 2 0 012-2z"
+                    />
+                  </svg>
+                  <span class="font-medium">About</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="mobile-nav-link group flex items-center px-4 py-3 rounded-lg hover:bg-[#edca7b]/10 hover:text-[#edca7b] transition-all duration-300"
+                  style="color: #fff"
+                >
+                  <svg
+                    class="w-5 h-5 mr-3 group-hover:scale-110 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                    />
+                  </svg>
+                  <span class="font-medium">Services</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="mobile-nav-link group flex items-center px-4 py-3 rounded-lg hover:bg-[#edca7b]/10 hover:text-[#edca7b] transition-all duration-300"
+                  style="color: #fff"
+                >
+                  <svg
+                    class="w-5 h-5 mr-3 group-hover:scale-110 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm3 10l3-3 2 2 3-4 4 5H7zM8 8a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                    />
+                  </svg>
+                  <span class="font-medium">Gallery</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="mobile-nav-link group flex items-center px-4 py-3 rounded-lg hover:bg-[#edca7b]/10 hover:text-[#edca7b] transition-all duration-300"
+                  style="color: #fff"
+                >
+                  <svg
+                    class="w-5 h-5 mr-3 group-hover:scale-110 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    />
+                  </svg>
+                  <span class="font-medium">Testimonials</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="mobile-nav-link group flex items-center px-4 py-3 rounded-lg hover:bg-[#edca7b]/10 hover:text-[#edca7b] transition-all duration-300"
+                  style="color: #fff"
+                >
+                  <svg
+                    class="w-5 h-5 mr-3 group-hover:scale-110 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span class="font-medium">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      html {
+        scroll-padding-top: 68px !important; /* navbar height + a bit */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer, Edge */
+      }
+
+      html::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+      }
+
+      @media (max-width: 767px) {
+        html {
+          scroll-padding-top: 64px !important;
+        }
+      }
+
+      /* Mobile sidebar animations */
+      #mobile-sidebar.show #sidebar-backdrop {
+        opacity: 1;
+      }
+
+      #mobile-sidebar.show #sidebar-panel {
+        transform: translateX(0);
+      }
+
+      /* Mobile nav link animations */
+      .mobile-nav-link {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .mobile-nav-link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(237, 202, 123, 0.1),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .mobile-nav-link:hover::before {
+        left: 100%;
+      }
+
+      /* Prevent body scroll when sidebar is open */
+      body.sidebar-open {
+        overflow: hidden;
+      }
+    </style>
+
+    <!-- Hero -->
+    <section
+      id="home"
+      class="relative isolate overflow-hidden min-h-[85vh] pt-2 bg-black md:bg-[url('./img/hero_banner.jpg')] md:bg-cover md:bg-center md:[transform:scaleX(-1)]"
+    >
+      <!-- Gold decorative sparkles: only show on md and up -->
+      <div
+        class="absolute right-2 top-10 z-10 hidden md:block md:[transform:scaleX(-1)]"
+      >
+        <svg width="70" height="70" fill="none">
+          <circle cx="35" cy="35" r="24" fill="#EDCA7B" opacity="0.15" />
+          <circle cx="47" cy="22" r="4" fill="#EDCA7B" opacity="0.46" />
+          <circle cx="18" cy="38" r="2" fill="#EDCA7B" opacity="0.7" />
+        </svg>
+      </div>
+      <div
+        class="mt-[64px] container max-w-7xl mx-auto px-4 min-h-[80vh] flex items-center md:[transform:scaleX(-1)]"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 w-full h-full my-auto items-center justify-center gap-10 flex-row-reverse"
+        >
+          <!-- Left content column (now on the right) -->
+          <div class="space-y-6 animate-fadeInUp flex flex-col items-center md:items-start text-center md:text-left mx-auto">
+            <h1
+              class="font-display text-[28px] xs:text-3xl md:text-5xl lg:text-[56px] leading-tight bg-clip-text text-transparent bg-gradient-to-b from-[#b88b28] via-[#edca7b] to-[#b88b28] drop-shadow-gold"
+              style="text-shadow: 0 2px 18px #edca7b55"
+            >
+              Sophisticated Excellence – Enhance Royal Elegance at Your
+              Fingertips
+            </h1>
+            <p
+              class="mt-2 text-white text-base md:text-lg font-medium max-w-xl text-center md:text-left"
+              style="color: #fff !important"
+            >
+              Spa-standard ambience, 5-star service quality, meticulous
+              technicians, and premium imported products.<br />
+              <span class="text-[#edca7b] font-semibold"
+                >Pamper your hands, express your unique beauty!</span
+              >
+            </p>
+            <div
+              class="mt-8 flex flex-col gap-3 sm:flex-row [&>a]:shadow-glow justify-center md:justify-start w-full"
+            >
+              <a
+                href="https://book.gocheckin.net/v3/nails/eva-nails-and-lashes-18980/choose-service"
+                class="rounded-full bg-[#edca7b] px-8 py-3 text-center font-extrabold text-black text-lg tracking-wide shadow-gold-light hover:scale-105 transition transform hover:bg-[#b88b28]"
+                >Book Now</a
+              >
+              <a
+                href="#services"
+                class="rounded-full border border-gold/40 px-8 py-3 text-center font-semibold text-[#edca7b] hover:bg-gold/10 hover:text-gold/90 transition backdrop-blur"
+                >Explore Services</a
+              >
+            </div>
+            <div
+              class="mt-8 flex flex-wrap gap-8 text-sm text-white/70 font-medium justify-center md:justify-start w-full"
+            >
+              <div class="flex items-center gap-2">
+                <span
+                  class="h-2.5 w-2.5 rounded-full bg-gold shadow-glow inline-block"
+                ></span>
+                <span>1000+ satisfied customers</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span
+                  class="h-2.5 w-2.5 rounded-full bg-gold shadow-glow inline-block"
+                ></span>
+                <span>7-day warranty</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span
+                  class="h-2.5 w-2.5 rounded-full bg-gold shadow-glow inline-block"
+                ></span>
+                <span>VIP space – Private and cozy</span>
+              </div>
+            </div>
+          </div>
+          <!-- Right blank column (now on the left) -->
+          <div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-[#020202]">
+      <div
+        class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center gap-10"
+      >
+        <!-- Hình ảnh chính -->
+        <div class="w-full md:w-1/2 flex justify-center items-center">
+          <!-- Mobile: stack images, Desktop: overlay images -->
+          <div class="w-full md:w-4/5 fade-in-right relative">
+            <!-- Main image -->
+            <div class="bg-white shadow-[0_16px_40px_rgba(0,0,0,.12)] z-10 rounded-lg p-1 bg-[#d9a29b] md:relative md:-top-20 md:-left-44">
+              <img
+                src="./img/about_01.JPG"
+                alt="Eva Nails & Lashes showcase"
+                class="w-full h-full object-cover rounded-lg"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+            <!-- Decorative/Secondary image -->
+            <div class="rounded-xl mt-4 md:mt-0 w-full h-full md:absolute md:w-4/5 md:h-4/5 md:-bottom-16 md:-right-10 z-0 overflow-visible">
+              <img
+                src="./img/about_02.jpg"
+                alt="Eva Nails & Lashes decor"
+                class="w-full h-full object-cover rounded-lg shadow-xl md:absolute md:inset-0 md:-z-10"
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Nội dung + Gallery nhỏ phía dưới -->
+        <div class="w-full md:w-1/2 flex flex-col gap-6">
+          <h2
+            class="text-center text-3xl md:text-4xl lg:text-5xl font-black tracking-wide"
+            style="
+              background: linear-gradient(to bottom, #b88b28, #edca7b, #b88b28);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            About us
+          </h2>
+          <p class="text-base md:text-lg text-white mb-2 leading-relaxed">
+            <span class="font-bold text-[#edca7b]">EVA Nail & Lashes</span> is a
+            luxury retreat for beauty and relaxation, located at
+            <span class="font-semibold text-[#edca7b]"
+              >640 W First St, Tustin, CA, United States, California </span
+            >.
+          </p>
+          <p class="text-base md:text-lg text-white mb-2 leading-relaxed">
+            We specialize in premium nail and spa services delivered in a
+            serene, spotless environment. Every treatment is designed to elevate
+            your confidence and comfort, using top-tier products and expert
+            care.
+          </p>
+          <p class="text-base md:text-lg text-white mb-2 leading-relaxed">
+            Whether you're here for a quick refresh or a full pampering session,
+            our skilled technicians ensure every visit feels indulgent and
+            unforgettable.
+          </p>
+          <!-- Gallery ảnh nhỏ dưới phần text -->
+          <!-- Gallery Swiper (Sử dụng swiperjs) -->
+          <!-- Thêm swiperjs CDN -->
+          <div class="mt-1">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-6 flex-wrap justify-between"
+            >
+              <div
+                class="max-w-[700px] aspect-[16/9] rounded-lg overflow-hidden shadow-xl border-2 border-white bg-black"
+              >
+                <img
+                  src="./img/about_g_01.jpg"
+                  alt="About gallery 1"
+                  class="object-cover w-full h-full block"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="max-w-[700px] aspect-[16/9] rounded-lg overflow-hidden shadow-xl border-2 border-white bg-black"
+              >
+                <img
+                  src="./img/about_g_02.jpg"
+                  alt="About gallery 2"
+                  class="object-cover w-full h-full block"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Images gallery -->
+    <section id="gallery" class="py-14 bg-black">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="w-full flex items-center justify-center mb-8">
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-medium font-black tracking-wide text-gradient mb-2 fade-in-up-gallery"
+            style="
+              background: linear-gradient(to bottom, #b88b28, #edca7b, #b88b28);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            INSIDE OUR NAIL STUDIO
+          </h2>
+        </div>
+
+        <!-- 3D Carousel -->
+        <style>
+          .carousel-3d-container {
+            perspective: 1800px;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 2.5rem auto;
+            height: 400px;
+            position: relative;
+            overflow: visible;
+            pointer-events: none;
+          }
+          .carousel-3d {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-style: preserve-3d;
+            will-change: transform;
+            pointer-events: none;
+            /* Thẳng đứng, không nghiêng */
+            transform: none;
+          }
+          .carousel-3d-img {
+            position: absolute;
+            width: 270px;
+            height: 330px;
+            left: 50%;
+            top: 50%;
+            transform-style: preserve-3d;
+            border-radius: 18px;
+            object-fit: cover;
+            box-shadow: 0 6px 40px 0 rgba(255, 222, 100, 0.12);
+            cursor: pointer;
+            border: 3px solid rgba(255, 255, 193, 0.25);
+            transition: box-shadow 0.3s, border-color 0.4s,
+              transform 0.25s cubic-bezier(0.39, 0.27, 0.21, 1.13);
+            background: #181813;
+            /* Center image origin for nice hover scale effect */
+            transform: translate(-50%, -50%);
+            pointer-events: auto;
+          }
+          .carousel-3d-img:hover {
+            box-shadow: 0 8px 60px 0 rgba(255, 230, 100, 0.25);
+            border-color: #ffe55a;
+            z-index: 10;
+            /* Hiệu ứng nổi khối khi hover */
+            transform: translate(-50%, -50%) scale(1.07);
+          }
+          /* Thương hiệu ở chính giữa trục - tăng width, rounded-lg */
+          .carousel-3d-brand {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 30;
+            pointer-events: auto;
+            background: rgba(0, 0, 0, 0.65);
+            /* tăng width, rounded-lg */
+            width: 410px;
+            min-height: 0;
+            padding: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 22px 0 rgba(255, 243, 200, 0.17);
+            border: 2.5px solid #ffe65a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .carousel-3d-brand-text {
+            background: linear-gradient(
+              90deg,
+              #ffe570 20%,
+              #ffd700 60%,
+              #fff7ae 85%,
+              #ac8d00 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: #ffe65a;
+            font-size: 2.1rem;
+            letter-spacing: 0.08em;
+            font-family: "Dancing Script", cursive;
+            font-weight: 800;
+            text-shadow: 0 2px 8px #3024007c, 0 0px 0px #fffad4;
+            margin-bottom: 0.2em;
+            text-align: center;
+            white-space: normal;
+            word-break: break-word;
+          }
+          .carousel-3d-brand-sub {
+            color: #fff6c1;
+            font-size: 1.05rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.13em;
+            text-shadow: 0 2px 4px #29240681, 0 0px 0px #fffad482;
+            margin-top: -0.15em;
+            text-align: center;
+            white-space: normal;
+            word-break: break-word;
+          }
+          @media (max-width: 900px) {
+            .carousel-3d-container {
+              max-width: 340px;
+              height: 320px;
+            }
+            .carousel-3d-img {
+              width: 165px;
+              height: 222px;
+            }
+            .carousel-3d-brand {
+              width: 200px;
+              padding: 8px 0;
+              font-size: 1.08rem;
+            }
+            .carousel-3d-brand-text {
+              font-size: 1.12rem;
+            }
+            .carousel-3d-brand-sub {
+              font-size: 0.85rem;
+            }
+          }
+        </style>
+        <div class="carousel-3d-container">
+          <div class="carousel-3d" id="carousel3d">
+            <!-- Thương hiệu nằm trong trục, nhưng KHÔNG bị xoay -->
+            <!-- <div class="carousel-3d-brand">
+              <span class="carousel-3d-brand-text">LISA Nails and Spa</span>
+              <span class="carousel-3d-brand-sub">True beauty, cherish yourself</span>
+            </div> -->
+            <img
+              src="./img/gallery_01.jpg"
+              alt="Carousel Img 1"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_02.jpg"
+              alt="Carousel Img 2"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_03.jpg"
+              alt="Carousel Img 3"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_04.jpg"
+              alt="Carousel Img 4"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_05.jpg"
+              alt="Carousel Img 5"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_06.jpg"
+              alt="Carousel Img 6"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_07.jpg"
+              alt="Carousel Img 7"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_08.jpg"
+              alt="Carousel Img 8"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_09.jpg"
+              alt="Carousel Img 9"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_10.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_11.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_12.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_13.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_14.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_15.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_16.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_17.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_18.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+          </div>
+        </div>
+        <script>
+          (function () {
+            const carousel = document.getElementById("carousel3d");
+            const images = carousel.querySelectorAll(".carousel-3d-img");
+            const imgCount = images.length;
+            const theta = 360 / imgCount;
+            // mở rộng radius cho vòng ngoài lớn hơn
+            const radius = 800;
+            // không tilt
+            const tilt = 0;
+
+            let startTime = null;
+
+            images.forEach((img, i) => {
+              const rot = theta * i;
+              img.style.transform = `translate(-50%, -50%) rotateY(${rot}deg) translateZ(${radius}px) rotateX(${tilt}deg)`;
+              img.setAttribute("tabindex", 0);
+            });
+
+            function animate(ts) {
+              if (!startTime) startTime = ts;
+              // Xoay chậm lại: tăng duration lên 28 giây
+              const duration = 40000;
+              const t = ((ts - startTime) % duration) / duration;
+              const rotate = t * 360;
+              carousel.style.transform = `translateZ(-${radius}px) rotateY(${-rotate}deg)`;
+              // Giữ brand không bị xoay cùng carousel
+              const brand = carousel.querySelector(".carousel-3d-brand");
+              if (brand) {
+                brand.style.transform =
+                  "translate(-50%, -50%) rotateY(" + rotate + "deg)";
+              }
+              requestAnimationFrame(animate);
+            }
+            requestAnimationFrame(animate);
+          })();
+        </script>
+
+        <!-- <div
+          id="gallery-images"
+          class="columns-2 sm:columns-3 md:columns-4 gap-5 space-y-4 [column-fill:_balance]"
+        >
+          <img
+            src="./img/gallery_01.jpg"
+            alt="Gallery 1"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="0"
+          />
+          <img
+            src="./img/gallery_02.jpg"
+            alt="Gallery 2"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="1"
+          />
+          <img
+            src="./img/gallery_03.jpg"
+            alt="Gallery 3"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="2"
+          />
+          <img
+            src="./img/gallery_04.jpg"
+            alt="Gallery 4"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="3"
+          />
+          <img
+            src="./img/gallery_05.jpg"
+            alt="Gallery 5"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="4"
+          />
+          <img
+            src="./img/gallery_06.jpg"
+            alt="Gallery 6"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="5"
+          />
+          <img
+            src="./img/gallery_07.jpg"
+            alt="Gallery 7"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="6"
+          />
+          <img
+            src="./img/gallery_08.jpg"
+            alt="Gallery 8"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="7"
+          />
+          <img
+            src="./img/gallery_09.jpg"
+            alt="Gallery 9"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="8"
+          />
+          <img
+            src="./img/gallery_10.jpg"
+            alt="Gallery 10"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="9"
+          />
+          <img
+            src="./img/gallery_11.jpg"
+            alt="Gallery 11"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="10"
+          />
+          <img
+            src="./img/gallery_12.jpg"
+            alt="Gallery 12"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="11"
+          />
+        <img
+            src="./img/gallery_13.jpg"
+            alt="Gallery 13"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="12"
+          />
+        <img
+            src="./img/gallery_14.jpg"
+            alt="Gallery 14"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="13"
+          />
+        <img
+            src="./img/gallery_15.jpg"
+            alt="Gallery 15"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="14"
+          />
+        <img
+            src="./img/gallery_16.jpg"
+            alt="Gallery 16"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="15"
+          />
+        <img
+            src="./img/gallery_17.jpg"
+            alt="Gallery 17"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="16"
+          />
+        <img
+            src="./img/gallery_18.jpg"
+            alt="Gallery 18"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="17"
+          />
+        <img
+            src="./img/gallery_19.jpg"
+            alt="Gallery 19"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="18"
+          />
+        <img
+            src="./img/gallery_20.jpg"
+            alt="Gallery 20"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="19"
+          />
+        <img
+            src="./img/gallery_21.jpg"
+            alt="Gallery 21"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="20"
+          />
+        <img
+            src="./img/gallery_22.jpg"
+            alt="Gallery 22"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="21"
+          />
+        <img
+            src="./img/gallery_23.jpg"
+            alt="Gallery 23"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="22"
+          />
+        <img
+            src="./img/gallery_24.jpg"
+            alt="Gallery 24"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="23"
+          />
+        <img
+            src="./img/gallery_25.jpg"
+            alt="Gallery 25"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="24"
+          />
+        <img
+            src="./img/gallery_26.jpg"
+            alt="Gallery 26"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="25"
+          />
+        <img
+            src="./img/gallery_27.jpg"
+            alt="Gallery 27"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="26"
+          />
+        <img
+            src="./img/gallery_28.jpg"
+            alt="Gallery 28"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="27"
+          />
+        <img
+            src="./img/gallery_29.jpg"
+            alt="Gallery 29"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="28"
+          />
+        <img
+            src="./img/gallery_30.jpg"
+            alt="Gallery 30"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+            data-index="29"
+          />
+        </div> -->
+      </div>
+
+      <!-- Modal for gallery view -->
+      <div
+        id="gallery-modal"
+        class="fixed inset-0 z-[9999] hidden bg-black/80 flex items-center justify-center transition-all duration-200"
+      >
+        <div
+          class="relative w-full max-w-3xl mx-auto p-4 flex flex-col items-center"
+        >
+          <!-- Close button -->
+          <button
+            id="modal-close-btn"
+            class="absolute right-4 top-4 z-50 bg-black/70 text-white rounded-full p-2 hover:bg-yellow-600 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-yellow-300"
+            aria-label="Close gallery view"
+            type="button"
+          >
+            <svg width="28" height="28" fill="none" viewBox="0 0 28 28">
+              <path
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                d="M7 7l14 14M21 7l-14 14"
+              ></path>
+            </svg>
+          </button>
+          <!-- Prev button -->
+          <button
+            id="modal-prev-btn"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-50 bg-black/70 text-white rounded-full p-3 ml-4 hover:bg-secondary hover:text-yellow-50 transition focus:outline-none focus:ring-2 focus:ring-yellow-300"
+            aria-label="Previous image"
+            type="button"
+          >
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15.5 19L8.5 12L15.5 5"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <!-- Next button -->
+          <button
+            id="modal-next-btn"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-50 bg-black/70 text-white rounded-full p-3 mr-4 hover:bg-secondary hover:text-yellow-50 transition focus:outline-none focus:ring-2 focus:ring-yellow-300"
+            aria-label="Next image"
+            type="button"
+          >
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M8.5 5L15.5 12L8.5 19"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <!-- Main image -->
+          <img
+            id="modal-main-img"
+            class="w-full max-h-[65vh] object-contain rounded-lg shadow-xl bg-black select-none"
+            src=""
+            alt="Zoomed Gallery"
+          />
+          <!-- Thumbnails row -->
+          <div
+            id="modal-thumbs"
+            class="flex flex-row items-center justify-center gap-2 mt-7 overflow-x-auto py-2 w-full scrollbar-thin scrollbar-thumb-secondary/40 scrollbar-track-black/20"
+          >
+            <!-- Thumbs will be inserted here by JS -->
+          </div>
+        </div>
+      </div>
+      <style>
+        /* custom scrollbar for modal thumbs */
+        #modal-thumbs::-webkit-scrollbar {
+          height: 8px;
+        }
+        #modal-thumbs::-webkit-scrollbar-thumb {
+          background: #edca7baa;
+          border-radius: 4px;
+        }
+        #modal-thumbs::-webkit-scrollbar-track {
+          background: #25252533;
+        }
+        #gallery-modal {
+          backdrop-filter: blur(4px);
+        }
+        body.gallery-modal-open {
+          overflow: hidden !important;
+        }
+
+        /* Xuất hiện hiệu ứng gallery */
+        .fade-in-up-gallery {
+          opacity: 0;
+          transform: translateY(52px);
+          transition: opacity 0.6s cubic-bezier(0.62, 0.19, 0.22, 1) 0s,
+            transform 0.75s cubic-bezier(0.41, 0.82, 0, 1.18) 0s;
+        }
+        .fade-in-up-gallery.visible {
+          opacity: 1;
+          transform: none;
+        }
+      </style>
+      <script>
+        // Hiệu ứng xuất hiện gallery section
+        (function () {
+          document.addEventListener("DOMContentLoaded", function () {
+            const fadeEls = document.querySelectorAll(".fade-in-up-gallery");
+            if (!fadeEls.length) return;
+            let delayBase = 0.09;
+            fadeEls.forEach(function (el, idx) {
+              if (!el.style.transitionDelay) {
+                el.style.transitionDelay = delayBase * idx + "s";
+              }
+            });
+            const options = { threshold: 0.11 };
+            const obs = new window.IntersectionObserver(function (
+              entries,
+              observer
+            ) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            options);
+            fadeEls.forEach(function (el) {
+              obs.observe(el);
+            });
+          });
+        })();
+
+        (function () {
+          const imageList = [
+            "./img/gallery_01.jpg",
+            "./img/gallery_02.jpg",
+            "./img/gallery_03.jpg",
+            "./img/gallery_04.jpg",
+            "./img/gallery_05.jpg",
+            "./img/gallery_06.jpg",
+            "./img/gallery_07.jpg",
+            "./img/gallery_08.jpg",
+            "./img/gallery_09.jpg",
+            "./img/gallery_10.jpg",
+            "./img/gallery_11.jpg",
+            "./img/gallery_12.jpg",
+          ];
+
+          const modal = document.getElementById("gallery-modal");
+          const mainImg = document.getElementById("modal-main-img");
+          const thumbsRow = document.getElementById("modal-thumbs");
+          const closeBtn = document.getElementById("modal-close-btn");
+          const prevBtn = document.getElementById("modal-prev-btn");
+          const nextBtn = document.getElementById("modal-next-btn");
+          let currentIndex = 0;
+
+          function updateModal(index) {
+            currentIndex = index;
+            mainImg.src = imageList[currentIndex];
+            // Render thumbnails
+            thumbsRow.innerHTML = "";
+            imageList.forEach((src, i) => {
+              const thumb = document.createElement("img");
+              thumb.src = src;
+              thumb.alt = "Small Gallery " + (i + 1);
+              thumb.className =
+                "rounded-lg h-[58px] object-cover border-2 cursor-pointer transition shadow " +
+                (i === index
+                  ? "border-secondary opacity-100 ring-2 ring-yellow-200"
+                  : "border-transparent opacity-80 hover:opacity-100 hover:ring-2 hover:ring-[#EDCA7B");
+              thumb.style.width = "auto";
+              thumb.setAttribute("data-thumb-index", i);
+              thumb.addEventListener("click", function () {
+                updateModal(i);
+              });
+              thumbsRow.appendChild(thumb);
+            });
+          }
+
+          function openModal(index) {
+            updateModal(index);
+            modal.classList.remove("hidden");
+            document.body.classList.add("gallery-modal-open");
+            setTimeout(() => {
+              mainImg.focus && mainImg.focus();
+            }, 0);
+          }
+          function closeModal() {
+            modal.classList.add("hidden");
+            document.body.classList.remove("gallery-modal-open");
+          }
+
+          // Thumbnail and gallery main image navigation
+          prevBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const idx =
+              (currentIndex - 1 + imageList.length) % imageList.length;
+            updateModal(idx);
+          });
+          nextBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const idx = (currentIndex + 1) % imageList.length;
+            updateModal(idx);
+          });
+
+          closeBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            closeModal();
+          });
+
+          modal.addEventListener("click", function (e) {
+            // Click outside of modal content closes modal
+            if (e.target === modal) closeModal();
+          });
+
+          window.addEventListener("keydown", function (e) {
+            if (!modal.classList.contains("hidden")) {
+              if (e.key === "Escape") closeModal();
+              else if (e.key === "ArrowLeft") prevBtn.click();
+              else if (e.key === "ArrowRight") nextBtn.click();
+            }
+          });
+
+          // Click on gallery image to open modal
+          document.querySelectorAll(".gallery-img").forEach(function (img) {
+            img.addEventListener("click", function () {
+              const idx = parseInt(this.getAttribute("data-index"), 10) || 0;
+              openModal(idx);
+            });
+          });
+        })();
+      </script>
+    </section>
+
+    <!-- Services (EVA Nails & Lashes) -->
+    <section id="services" class="py-12 bg-[#020202]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="w-full">
+          <div
+            class="rounded-2xl border-2 border-gold bg-transparent shadow-glow overflow-hidden"
+          >
+            <!-- Header -->
+            <div
+              class="px-6 sm:px-10 py-6 border-b border-gold/40 bg-[#f8f9fa]"
+            >
+              <h2
+                class="text-center text-3xl md:text-4xl lg:text-5xl font-black tracking-wide"
+                style="
+                  background: linear-gradient(
+                    to bottom,
+                    #b88b28,
+                    #edca7b,
+                    #b88b28
+                  );
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                BASIC MENU
+              </h2>
+            </div>
+            <div class="p-6 sm:p-10">
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Acrylic Nails -->
+                <div>
+                  <h3
+                    class="text-xl font-bold text-[#edca7b] mb-2 tracking-wide uppercase"
+                  >
+                    Acrylic Nails
+                  </h3>
+                  <ul class="space-y-1 text-base text-[#020202]">
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Full Set</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$50+</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Refill</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$45+</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Gel X</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$45+</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Builder Gel</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$55+</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Manicure Gel</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$35+</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Manicure Regular</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$25</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Lash -->
+                <div>
+                  <h3
+                    class="text-xl font-bold text-[#edca7b] mb-2 tracking-wide uppercase"
+                  >
+                    Lash
+                  </h3>
+                  <ul class="space-y-1 text-base text-[#020202]">
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Lashes</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$65</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Hybrid</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$75</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Volume</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$85</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Mega</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$95</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Lash Lift</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$50+</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Refill</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$55+</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Eyebrow -->
+                <div>
+                  <h3
+                    class="text-xl font-bold text-[#edca7b] mb-2 tracking-wide uppercase"
+                  >
+                    Eyebrow
+                  </h3>
+                  <ul class="space-y-1 text-base text-[#020202]">
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Eyebrow Tinting</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$55+</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Waxing -->
+                <div>
+                  <h3
+                    class="text-xl font-bold text-[#edca7b] mb-2 tracking-wide uppercase"
+                  >
+                    Waxing
+                  </h3>
+                  <ul class="space-y-1 text-base text-[#020202]">
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Full Face</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$35</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Eyebrow</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$15</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Upper Lip</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$10</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Underarms (left &amp; right)</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$20</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Full Arms (left &amp; right)</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$40+</span>
+                    </li>
+                    <li
+                      class="flex items-center justify-between text-white font-medium leading-relaxed"
+                    >
+                      <span>Full Legs (left &amp; right)</span>
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="float-right font-semibold">$40+</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services (EVA PEDICURE unified frame) -->
+    <section id="pedicure" class="py-12 bg-[#020202]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="w-full">
+          <div
+            class="rounded-2xl border-2 border-gold bg-[#020202] shadow-glow overflow-hidden"
+          >
+            <!-- Header -->
+            <div
+              class="px-6 sm:px-10 py-6 border-b border-gold/40 bg-[#f8f9fa]"
+            >
+              <h2
+                class="text-center text-3xl md:text-4xl lg:text-5xl font-black tracking-wide"
+                style="
+                  background: linear-gradient(
+                    to bottom,
+                    #b88b28,
+                    #edca7b,
+                    #b88b28
+                  );
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                EVA PEDICURE
+              </h2>
+            </div>
+            <!-- Combo Section -->
+            <div class="px-6 sm:px-10 py-5 border-b border-gold/40 bg-transparent">
+              <ul class="space-y-1 items-center text-center">
+                <li
+                  class="font-bold text-xl md:text-2xl text-[#edca7b]"
+                  style="font-family: inherit"
+                >
+                  Classic Combo: EVA Pedicure &amp; Regular Manicure
+                  <span class="font-bold">$65</span>
+                </li>
+                <li
+                  class="font-bold text-xl md:text-2xl text-[#edca7b]"
+                  style="font-family: inherit"
+                >
+                  Delux Combo 1: Green Tea Pedicure &amp; Manicure
+                  <span class="font-bold">$75</span>
+                </li>
+                <li
+                  class="font-bold text-xl md:text-2xl text-[#edca7b]"
+                  style="font-family: inherit"
+                >
+                  Delux Combo 2: Honey Pedicure &amp; Manicure
+                  <span class="font-bold">$95</span>
+                </li>
+                <li
+                  class="font-bold text-xl md:text-2xl text-[#edca7b]"
+                  style="font-family: inherit"
+                >
+                  Delux Combo 3: Matcha Pedicure &amp; Manicure
+                  <span class="font-bold">$110</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Content grid -->
+            <div class="p-6 sm:p-10">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+              >
+                <!-- Simple -->
+                <div class="rounded-xl border border-gold/30 bg-transparent p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-xl font-bold text-[#edca7b]">Simple</h3>
+                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                    <div class="text-[#edca7b] text-xl font-bold">$30</div>
+                  </div>
+                  <p class="mt-5 text-white font-medium leading-relaxed">
+                    Nail clipping, nail shaping, cuticle trimming, lotion and
+                    finished with regular polish.
+                  </p>
+                  <div class="mt-3 text-sm text-transparent font-semibold">
+                    4 min lotion massage
+                  </div>
+                </div>
+                <!-- Eva -->
+                <div
+                  class="rounded-xl border border-gold/30 bg-transparent p-5 delay-150"
+                >
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-xl font-bold text-[#edca7b]">Eva</h3>
+                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                    <div class="text-[#edca7b] text-xl font-bold">$45</div>
+                  </div>
+                  <p class="mt-5 text-white font-medium leading-relaxed">
+                    Nail clipping, nail shaping, cuticle trimming, callous
+                    removal, sea salt scrub and hot towel.
+                  </p>
+                  <div class="mt-3 text-sm text-transparent font-semibold">
+                    7 min lotion massage
+                  </div>
+                </div>
+                <!-- Jelly -->
+                <div
+                  class="rounded-xl border border-gold/30 bg-transparent p-5 delay-300"
+                >
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-xl font-bold text-[#edca7b]">Jelly</h3>
+                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                    <div class="text-[#edca7b] text-xl font-bold">$70</div>
+                  </div>
+                  <p class="mt-5 text-white font-medium leading-relaxed">
+                    Feet soaked in jelly-like fluid to hydrate and exfoliate the
+                    skin, nail clipping, nail shaping, cuticle trimming, callous
+                    removal, sea salt scrub and hot towel.
+                  </p>
+                  <div class="mt-3 text-sm text-transparent font-semibold">
+                    10 min lotion massage
+                  </div>
+                </div>
+                <!-- Aroma -->
+                <div class="rounded-xl border border-gold/30 bg-transparent p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-xl font-bold text-[#edca7b]">Aroma</h3>
+                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                    <div class="text-[#edca7b] text-xl font-bold">$65</div>
+                  </div>
+                  <p class="mt-5 text-white font-medium leading-relaxed">
+                    Foot softened in a unique blend of essential aroma oils to
+                    hydrate and exfoliate the skin, orange slices and rose
+                    petals, nail clipping, nail shaping, cuticle trimming,
+                    callous removal, sea salt scrub and hot towel.
+                  </p>
+                  <div class="mt-3 text-sm text-transparent font-semibold">
+                    10 min lotion massage
+                  </div>
+                </div>
+                <!-- Green Tea -->
+                <div
+                  class="rounded-xl border border-gold/30 bg-transparent p-5 delay-150"
+                >
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-xl font-bold text-[#edca7b]">Green Tea</h3>
+                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                    <div class="text-[#edca7b] text-xl font-bold">$55</div>
+                  </div>
+                  <p class="mt-5 text-white font-medium leading-relaxed">
+                    Foot softened in a green tea soak to hydrate and exfoliate
+                    the skin, orange slices and rose petals, nail clipping,
+                    cuticle trimming, callous removal, sea salt scrub and hot
+                    towel.
+                  </p>
+                  <div class="mt-3 text-sm text-transparent font-semibold">
+                    10 min lotion massage
+                  </div>
+                </div>
+                <!-- Volcano -->
+                <div
+                  class="rounded-xl border border-gold/30 bg-transparent p-5 delay-300"
+                >
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-xl font-bold text-[#edca7b]">Volcano</h3>
+                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                    <div class="text-[#edca7b] text-xl font-bold">$65</div>
+                  </div>
+                  <p class="mt-5 text-white font-medium leading-relaxed">
+                    Luxury pedicure using detox volcano crystals for a bubbling
+                    reaction that moisturizes and softens skin, followed by
+                    exfoliating sugar scrub and organic collagen cream mask.
+                    Includes orange slices and rose petals, nail clipping, nail
+                    shaping, cuticle trimming, callous removal, sea salt scrub
+                    and hot towel.
+                  </p>
+                  <div class="mt-3 text-sm text-transparent font-semibold">
+                    10 min lotion massage
+                  </div>
+                </div>
+
+                <!-- Milk Honey -->
+                <div class="rounded-xl border border-gold/30 bg-transparent p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-xl font-bold text-[#edca7b]">Milk Honey</h3>
+                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                    <div class="text-[#edca7b] text-xl font-bold">$75</div>
+                  </div>
+                  <p class="mt-5 text-white font-medium leading-relaxed">
+                    Service Includes: Goat milk helps repair cracked heels and
+                    nourishes your skin. This pedicure harnesses the natural
+                    antibacterial and detoxifying power of honey and tea
+                    extracts to help eliminate odor and refresh tired feet. This
+                    is followed by a exfoliating sugar scrub and an organic
+                    collagen cream mask to seal in all the benefits, also
+                    includes nail clipping, nail shaping, cuticle trimming,
+                    callous removal, paraffin wax, sea salt scrub and hot towel.
+                  </p>
+                  <div
+                    class="mt-3 text-sm text-transparent font-semibold flex flex-col gap-1"
+                  >
+                    <span>10 min lotion shoulder massage</span>
+                    <span>10 min lotion feet massage</span>
+                  </div>
+                </div>
+
+                <!-- Coffee -->
+                <div
+                  class="rounded-xl border border-gold/30 bg-transparent p-5 delay-150"
+                >
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-xl font-bold text-[#edca7b]">Coffee</h3>
+                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                    <div class="text-[#edca7b] text-xl font-bold">$75</div>
+                  </div>
+                  <p class="mt-5 text-white font-medium leading-relaxed">
+                    Service Includes: A blend of cappuccino fragrance with
+                    honey. Special-made strong coffee bath bomb, a hydrating
+                    coffee scrub, a honey mask, butter cream leaving your feet
+                    completely smooth. This is followed by a exfoliating coffee
+                    sugar scrub and an organic collagen cream mask to seal in
+                    all the benefits, also includes nail clipping, nail shaping,
+                    cuticle trimming, callous removal, sea salt scrub and hot
+                    towel.
+                  </p>
+                  <div
+                    class="mt-3 text-sm text-transparent font-semibold flex flex-col gap-1"
+                  >
+                    <span>10 min lotion shoulder massage</span>
+                    <span>10 min lotion feet massage</span>
+                  </div>
+                </div>
+
+                <!-- Cucumber -->
+                <div
+                  class="rounded-xl border border-gold/30 bg-transparent p-5 delay-300"
+                >
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-xl font-bold text-[#edca7b]">Cucumber</h3>
+                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                    <div class="text-[#edca7b] text-xl font-bold">$80</div>
+                  </div>
+                  <p class="mt-5 text-white font-medium leading-relaxed">
+                    Service Includes: Experience pure indulgence with our
+                    gold-infused spa and cucumber treatment. This includes a
+                    gold sugar scrub exfoliation, a hydrating gold mask for a
+                    radiant glow, and a warm paraffin wax treatment to
+                    rejuvenate tired feet. We also use our signature gold-soaked
+                    hot towels to enhance the experience further. The service
+                    also includes nail clipping, shaping, cuticle care, callous
+                    removal, sea salt scrub, and a hot towel wrap — leaving your
+                    feet feeling refreshed, relaxed, and pampered.
+                  </p>
+                  <div
+                    class="mt-3 text-sm text-transparent font-semibold flex flex-col gap-1"
+                  >
+                    <span>10 min lotion shoulder massage</span>
+                    <span>10 min lotion feet massage</span>
+                  </div>
+                </div>
+
+                <!-- Matcha -->
+                <div class="rounded-xl border border-gold/30 bg-transparent p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-xl font-bold text-[#edca7b]">Matcha</h3>
+                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                    <div class="text-[#edca7b] text-xl font-bold">$80</div>
+                  </div>
+                  <p class="mt-5 text-white font-medium leading-relaxed">
+                    Service Includes: Experience pure indulgence with our
+                    gold-infused and matcha hydrating treatment. This includes a
+                    gold sugar scrub exfoliation, a hydrating gold mask for a
+                    radiant glow, and a warm paraffin wax treatment to
+                    rejuvenate tired feet. We also use our signature gold-soaked
+                    hot towels to enhance the experience further. The service
+                    also includes nail clipping, shaping, cuticle care, callous
+                    removal, sea salt scrub, and a hot towel wrap — leaving your
+                    feet feeling refreshed, relaxed, and pampered.
+                  </p>
+                  <div
+                    class="mt-3 text-sm text-transparent font-semibold flex flex-col gap-1"
+                  >
+                    <span>10 min lotion shoulder massage</span>
+                    <span>10 min lotion feet massage</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        (function () {
+          const options = { threshold: 0.14 };
+          function onIntersection(entries, observer) {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          }
+          document.addEventListener("DOMContentLoaded", function () {
+            const fadeEls = document.querySelectorAll("#services .");
+            const observer = new window.IntersectionObserver(
+              onIntersection,
+              options
+            );
+            fadeEls.forEach((el) => observer.observe(el));
+          });
+        })();
+      </script>
+      <style>
+        .fade-in-up {
+          opacity: 0;
+          transform: translateY(28px);
+          transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in-visible {
+          opacity: 1 !important;
+          transform: translateY(0) !important;
+        }
+      </style>
+    </section>
+
+    <!-- Services (Head Spa) -->
+    <section id="head_spa" class="py-12 bg-[#020202]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="w-full">
+          <div
+            class="rounded-2xl border-2 border-gold bg-[#020202] shadow-glow overflow-hidden"
+          >
+            <!-- Header -->
+            <div
+              class="px-6 sm:px-10 py-6 border-b border-gold/40 bg-[#f8f9fa]"
+            >
+              <h2
+                class="text-center text-3xl md:text-4xl lg:text-5xl font-black tracking-wide"
+                style="
+                  background: linear-gradient(
+                    to bottom,
+                    #b88b28,
+                    #edca7b,
+                    #b88b28
+                  );
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                HEAD SPA
+              </h2>
+            </div>
+            <!-- Content grid -->
+            <div class="p-6 sm:p-10 flex flex-col items-center">
+              <div class="w-full max-w-2xl flex flex-col gap-7">
+                <!-- Combo 1 -->
+                <div class="">
+                  <div class="flex flex-col">
+                    <div class="flex flex-wrap items-center">
+                      <span class="font-bold text-lg md:text-xl text-white"
+                        >COMBO 1 REGULAR HAIR WASH: 25 MINUTES</span
+                      >
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="font-bold text-lg text-white">$35</span>
+                    </div>
+                    <div
+                      class="text-[15px] mt-0.5 font-semibold text-white/70 italic"
+                    >
+                      (DOUBLE SHAMPOO, CONDITIONER, BLOW-DRY)
+                    </div>
+                  </div>
+                </div>
+                <!-- Combo 2 -->
+                <div class="">
+                  <div class="flex flex-col">
+                    <div class="flex flex-wrap items-center">
+                      <span class="font-bold text-lg md:text-xl text-white"
+                        >COMBO 2 NOURISHING HERBAL SCALP THERAPY: 40
+                        MINUTES</span
+                      >
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="font-bold text-lg text-white">$60</span>
+                    </div>
+                    <div
+                      class="text-[15px] mt-0.5 font-semibold text-white/70 italic"
+                    >
+                      (COMBO 1, NECK, SHOULDER,+PER BACK MASSAGE, FACIAL
+                      CLEANSING, FACE MASK)
+                    </div>
+                  </div>
+                </div>
+                <!-- Combo 3 -->
+                <div class="">
+                  <div class="flex flex-col">
+                    <div class="flex flex-wrap items-center">
+                      <span class="font-bold text-lg md:text-xl text-white"
+                        >COMBO 3 INTENSIVE HERBAL SCALP THERAPY: 70
+                        MINUTES</span
+                      >
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="ml-auto font-bold text-lg text-white"
+                        >$80</span
+                      >
+                    </div>
+                    <div
+                      class="text-[15px] mt-0.5 font-semibold text-white/70 italic"
+                    >
+                      (COMBO 2, MASSAGE FOR NECK, SHOULDERS, UPPER BACK, AND
+                      ARMS, FULL FACIAL TREATMENT, HERBAL SCALP MASSAGE TO
+                      STIMULATE HAIR GROWTH)
+                    </div>
+                  </div>
+                </div>
+                <!-- Combo 4 -->
+                <div class="">
+                  <div class="flex flex-col">
+                    <div class="flex flex-wrap items-center">
+                      <span class="font-bold text-lg md:text-xl text-white"
+                        >COMBO 4 PREMIUM HERBAL SCALP THERAPY: 80 MINUTES</span
+                      >
+                      <div class="h-[0.5px] flex-grow mx-4 bg-gray-700"></div>
+                      <span class="ml-auto font-bold text-lg text-white"
+                        >$90</span
+                      >
+                    </div>
+                    <div
+                      class="text-[15px] mt-0.5 font-semibold text-white/70 italic"
+                    >
+                      (COMBO 3, PREMIUM NUTRIENT-RICH FACE MASK, DEEP
+                      CONDITIONING HAIR TREATMENT FOR ULTRA-SOFT HAIR)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        (function () {
+          const options = { threshold: 0.14 };
+          function onIntersection(entries, observer) {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          }
+          document.addEventListener("DOMContentLoaded", function () {
+            const fadeEls = document.querySelectorAll("#services .");
+            const observer = new window.IntersectionObserver(
+              onIntersection,
+              options
+            );
+            fadeEls.forEach((el) => observer.observe(el));
+          });
+        })();
+      </script>
+      <style>
+        .fade-in-up {
+          opacity: 0;
+          transform: translateY(28px);
+          transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in-visible {
+          opacity: 1 !important;
+          transform: translateY(0) !important;
+        }
+      </style>
+    </section>
+
+    <!-- Images gallery -->
+    <section id="gallery" class="py-14 bg-[#020202]">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="w-full flex items-center justify-center mb-8">
+          <h2
+            class="text-center text-3xl md:text-4xl lg:text-5xl font-black tracking-wide"
+            style="
+              background: linear-gradient(to bottom, #b88b28, #edca7b, #b88b28);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            GALLERY
+          </h2>
+        </div>
+        <div
+          id="gallery-images"
+          class="columns-2 sm:columns-3 md:columns-4 gap-5 space-y-4 [column-fill:_balance]"
+        >
+          <!-- Gallery Images -->
+          <!-- Sử dụng 12 ảnh, g_01.jpg tới g_12.jpg -->
+          <img
+            src="./img/g_01.jpg"
+            alt="Gallery 1"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="0"
+          />
+          <img
+            src="./img/g_02.jpg"
+            alt="Gallery 2"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="1"
+          />
+          <img
+            src="./img/g_03.jpg"
+            alt="Gallery 3"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="2"
+          />
+          <img
+            src="./img/g_04.jpg"
+            alt="Gallery 4"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="3"
+          />
+          <img
+            src="./img/g_05.jpg"
+            alt="Gallery 5"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="4"
+          />
+          <img
+            src="./img/g_06.jpg"
+            alt="Gallery 6"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="5"
+          />
+          <img
+            src="./img/g_07.jpg"
+            alt="Gallery 7"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="6"
+          />
+          <img
+            src="./img/g_08.jpg"
+            alt="Gallery 8"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="7"
+          />
+          <img
+            src="./img/g_09.jpg"
+            alt="Gallery 9"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="8"
+          />
+          <img
+            src="./img/g_10.jpg"
+            alt="Gallery 10"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="9"
+          />
+          <img
+            src="./img/g_11.jpg"
+            alt="Gallery 11"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="10"
+          />
+          <img
+            src="./img/g_12.jpg"
+            alt="Gallery 12"
+            class="gallery-img fade-in-up-gallery w-full mb-4 rounded-lg transition-shadow duration-200 cursor-pointer shadow-[0_2px_12px_0_rgba(181,144,54,0.22)] hover:shadow-[0_2px_22px_0_rgba(215,186,75,0.45)]"
+            loading="lazy"
+            data-index="11"
+          />
+        </div>
+      </div>
+
+      <!-- Modal for gallery view -->
+      <div
+        id="gallery-modal"
+        class="fixed inset-0 z-[9999] hidden bg-black/80 flex items-center justify-center transition-all duration-200"
+      >
+        <div
+          class="relative w-full max-w-3xl mx-auto p-4 flex flex-col items-center"
+        >
+          <!-- Close button -->
+          <button
+            id="modal-close-btn"
+            class="absolute right-4 top-4 z-50 bg-gold/90 text-cocoa rounded-full p-2 hover:bg-secondary hover:text-champagne transition focus:outline-none focus:ring-2 focus:ring-gold"
+            aria-label="Close gallery view"
+            type="button"
+          >
+            <svg width="28" height="28" fill="none" viewBox="0 0 28 28">
+              <path
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                d="M7 7l14 14M21 7l-14 14"
+              ></path>
+            </svg>
+          </button>
+          <!-- Prev button -->
+          <button
+            id="modal-prev-btn"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-50 bg-gold/90 text-cocoa rounded-full p-3 ml-4 hover:bg-secondary hover:text-champagne transition focus:outline-none focus:ring-2 focus:ring-gold"
+            aria-label="Previous image"
+            type="button"
+          >
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15.5 19L8.5 12L15.5 5"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <!-- Next button -->
+          <button
+            id="modal-next-btn"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-50 bg-gold/90 text-cocoa rounded-full p-3 mr-4 hover:bg-secondary hover:text-champagne transition focus:outline-none focus:ring-2 focus:ring-gold"
+            aria-label="Next image"
+            type="button"
+          >
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M8.5 5L15.5 12L8.5 19"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <!-- Main image -->
+          <img
+            id="modal-main-img"
+            class="w-full max-h-[65vh] object-contain rounded-lg shadow-xl bg-champagne select-none"
+            src=""
+            alt="Zoomed Gallery"
+          />
+          <!-- Thumbnails row -->
+          <div
+            id="modal-thumbs"
+            class="flex flex-row items-center justify-center gap-2 mt-7 overflow-x-auto py-2 w-full scrollbar-thin scrollbar-thumb-gold/50 scrollbar-track-champagne/30"
+          >
+            <!-- Thumbs will be inserted here by JS -->
+          </div>
+        </div>
+      </div>
+      <style>
+        /* custom scrollbar for modal thumbs */
+        #modal-thumbs::-webkit-scrollbar {
+          height: 8px;
+        }
+        #modal-thumbs::-webkit-scrollbar-thumb {
+          background: #ccb147cc;
+          border-radius: 4px;
+        }
+        #modal-thumbs::-webkit-scrollbar-track {
+          background: #fff8e2;
+        }
+        #gallery-modal {
+          backdrop-filter: blur(4px);
+        }
+        body.gallery-modal-open {
+          overflow: hidden !important;
+        }
+
+        /* Xuất hiện hiệu ứng gallery */
+        .fade-in-up-gallery {
+          opacity: 0;
+          transform: translateY(52px);
+          transition: opacity 0.6s cubic-bezier(0.62, 0.19, 0.22, 1) 0s,
+            transform 0.75s cubic-bezier(0.41, 0.82, 0, 1.18) 0s;
+        }
+        .fade-in-up-gallery.visible {
+          opacity: 1;
+          transform: none;
+        }
+      </style>
+      <script>
+        // Hiệu ứng xuất hiện gallery section
+        (function () {
+          document.addEventListener("DOMContentLoaded", function () {
+            const fadeEls = document.querySelectorAll(".fade-in-up-gallery");
+            if (!fadeEls.length) return;
+            let delayBase = 0.09;
+            fadeEls.forEach(function (el, idx) {
+              if (!el.style.transitionDelay) {
+                el.style.transitionDelay = delayBase * idx + "s";
+              }
+            });
+            const options = { threshold: 0.11 };
+            const obs = new window.IntersectionObserver(function (
+              entries,
+              observer
+            ) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            options);
+            fadeEls.forEach(function (el) {
+              obs.observe(el);
+            });
+          });
+        })();
+
+        (function () {
+          const imageList = [
+            "./img/g_01.jpg",
+            "./img/g_02.jpg",
+            "./img/g_03.jpg",
+            "./img/g_04.jpg",
+            "./img/g_05.jpg",
+            "./img/g_06.jpg",
+            "./img/g_07.jpg",
+            "./img/g_08.jpg",
+            "./img/g_09.jpg",
+            "./img/g_10.jpg",
+            "./img/g_11.jpg",
+            "./img/g_12.jpg",
+          ];
+
+          const modal = document.getElementById("gallery-modal");
+          const mainImg = document.getElementById("modal-main-img");
+          const thumbsRow = document.getElementById("modal-thumbs");
+          const closeBtn = document.getElementById("modal-close-btn");
+          const prevBtn = document.getElementById("modal-prev-btn");
+          const nextBtn = document.getElementById("modal-next-btn");
+          let currentIndex = 0;
+
+          function updateModal(index) {
+            currentIndex = index;
+            mainImg.src = imageList[currentIndex];
+            // Render thumbnails
+            thumbsRow.innerHTML = "";
+            imageList.forEach((src, i) => {
+              const thumb = document.createElement("img");
+              thumb.src = src;
+              thumb.alt = "Small Gallery " + (i + 1);
+              thumb.className =
+                "rounded-lg h-[58px] object-cover border-2 cursor-pointer transition shadow " +
+                (i === index
+                  ? "border-gold opacity-100 ring-2 ring-gold/60"
+                  : "border-champagne opacity-80 hover:opacity-100 hover:ring-2 hover:ring-gold/30");
+              thumb.style.width = "auto";
+              thumb.setAttribute("data-thumb-index", i);
+              thumb.addEventListener("click", function () {
+                updateModal(i);
+              });
+              thumbsRow.appendChild(thumb);
+            });
+          }
+
+          function openModal(index) {
+            updateModal(index);
+            modal.classList.remove("hidden");
+            document.body.classList.add("gallery-modal-open");
+            setTimeout(() => {
+              mainImg.focus && mainImg.focus();
+            }, 0);
+          }
+          function closeModal() {
+            modal.classList.add("hidden");
+            document.body.classList.remove("gallery-modal-open");
+          }
+
+          // Thumbnail and gallery main image navigation
+          prevBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const idx =
+              (currentIndex - 1 + imageList.length) % imageList.length;
+            updateModal(idx);
+          });
+          nextBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const idx = (currentIndex + 1) % imageList.length;
+            updateModal(idx);
+          });
+
+          closeBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            closeModal();
+          });
+
+          modal.addEventListener("click", function (e) {
+            // Click outside of modal content closes modal
+            if (e.target === modal) closeModal();
+          });
+
+          window.addEventListener("keydown", function (e) {
+            if (!modal.classList.contains("hidden")) {
+              if (e.key === "Escape") closeModal();
+              else if (e.key === "ArrowLeft") prevBtn.click();
+              else if (e.key === "ArrowRight") nextBtn.click();
+            }
+          });
+
+          // Click on gallery image to open modal
+          document.querySelectorAll(".gallery-img").forEach(function (img) {
+            img.addEventListener("click", function () {
+              const idx = parseInt(this.getAttribute("data-index"), 10) || 0;
+              openModal(idx);
+            });
+          });
+        })();
+      </script>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-14 bg-[#020202] transition-all">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div
+          class="w-full flex items-center justify-center mb-8 fade-in-up-testimonials"
+          style="transition-delay: 0.04s"
+        >
+          <h2
+            class="text-center text-3xl md:text-4xl lg:text-5xl font-black tracking-wide"
+            style="
+              background: linear-gradient(to bottom, #b88b28, #edca7b, #b88b28);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            WHAT OUR CUSTOMERS SAY
+          </h2>
+        </div>
+        <!-- Swiper CSS (cdn) -->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <!-- Swiper -->
+        <div class="swiper testimonial-swiper fade-in-up-testimonials">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gold/50 rounded-2xl bg-transparent shadow-glow transition-shadow transition-transform duration-300 hover:shadow-lg hover:translate-y-[-6px] testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden"
+                data-card-index="1"
+              >
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
+                <div
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-gold via-champagne to-gold rounded-t-xl opacity-80"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/68.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gold/30 group-hover:border-gold/60 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-white">
+                      Anna Tran
+                    </div>
+                    <div
+                      class="flex text-lg space-x-1 animate-pulse group-hover:animate-none testimonial-stars"
+                    >
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-gold text-white px-2 py-1 rounded-full bg-black shadow inline-block font-semibold"
+                    >
+                      VIP Customer
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-white text-center w-full italic opacity-95 transition group-hover:opacity-100"
+                  >
+                    "Amazing service! The staff are professional, the vibe is so
+                    relaxing. I'm really satisfied with the result."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gold/50 rounded-2xl bg-transparent shadow-glow transition-shadow transition-transform duration-300 hover:shadow-lg hover:translate-y-[-6px] testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden"
+                data-card-index="2"
+              >
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
+                <div
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-gold via-champagne to-gold rounded-t-xl opacity-80"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/60.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gold/30 group-hover:border-gold/60 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-white">
+                      Michelle Nguyen
+                    </div>
+                    <div
+                      class="flex text-lg space-x-1 animate-pulse group-hover:animate-none testimonial-stars"
+                    >
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-gold text-white px-2 py-1 rounded-full bg-black shadow inline-block font-semibold"
+                    >
+                      Loyal Customer
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-white text-center w-full italic opacity-95 transition group-hover:opacity-100"
+                  >
+                    "The foot massage was super relaxing, and the technicians
+                    are very skilled. I'll definitely come back next time!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gold/50 rounded-2xl bg-transparent shadow-glow transition-shadow transition-transform duration-300 hover:shadow-lg hover:translate-y-[-6px] testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden"
+                data-card-index="3"
+              >
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
+                <div
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-gold via-champagne to-gold rounded-t-xl opacity-80"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/65.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gold/30 group-hover:border-gold/60 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-white">
+                      Linda Le
+                    </div>
+                    <div
+                      class="flex text-lg space-x-1 animate-pulse group-hover:animate-none testimonial-stars"
+                    >
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-gold text-white px-2 py-1 rounded-full bg-black shadow inline-block font-semibold"
+                    >
+                      New Customer
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-white text-center w-full italic opacity-95 transition group-hover:opacity-100"
+                  >
+                    "The facials were so effective! My skin improved a lot after
+                    just three treatments. Thank you, EVA Nail And Lashes!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 - NEW -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gold/50 rounded-2xl bg-black shadow-glow transition-shadow transition-transform duration-300 hover:shadow-lg hover:translate-y-[-6px] testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden"
+                data-card-index="4"
+              >
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
+                <div
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-gold via-champagne to-gold rounded-t-xl opacity-80"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/12.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gold/30 group-hover:border-gold/60 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-white">
+                      James Vo
+                    </div>
+                    <div
+                      class="flex text-lg space-x-1 animate-pulse group-hover:animate-none testimonial-stars"
+                    >
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-gold text-white px-2 py-1 rounded-full bg-black shadow inline-block font-semibold"
+                    >
+                      Local Guide
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-white text-center w-full italic opacity-95 transition group-hover:opacity-100"
+                  >
+                    "Spotless and modern salon. The nail art exceeded my
+                    expectations and lasted so long. Highly recommended!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 - NEW -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gold/50 rounded-2xl bg-black shadow-glow transition-shadow transition-transform duration-300 hover:shadow-lg hover:translate-y-[-6px] testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden"
+                data-card-index="5"
+              >
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
+                <div
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-gold via-champagne to-gold rounded-t-xl opacity-80"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/72.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gold/30 group-hover:border-gold/60 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-white">
+                      Emily Pham
+                    </div>
+                    <div
+                      class="flex text-lg space-x-1 animate-pulse group-hover:animate-none testimonial-stars"
+                    >
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-gold text-white px-2 py-1 rounded-full bg-black shadow inline-block font-semibold"
+                    >
+                      Regular Customer
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-white text-center w-full italic opacity-95 transition group-hover:opacity-100"
+                  >
+                    "Clean, cozy, and friendly staff. The prices are great and
+                    my nails always turn out perfectly beautiful!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 - NEW -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gold/50 rounded-2xl bg-black shadow-glow transition-shadow transition-transform duration-300 hover:shadow-lg hover:translate-y-[-6px] testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden"
+                data-card-index="6"
+              >
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
+                <div
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-gold via-champagne to-gold rounded-t-xl opacity-80"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/39.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gold/30 group-hover:border-gold/60 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-white">
+                      David Chen
+                    </div>
+                    <div
+                      class="flex text-lg space-x-1 animate-pulse group-hover:animate-none testimonial-stars"
+                    >
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                      <span style="color:#edca7b;">★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-gold text-white px-2 py-1 rounded-full bg-black shadow inline-block font-semibold"
+                    >
+                      Walk-in Guest
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-white text-center w-full italic opacity-95 transition group-hover:opacity-100"
+                  >
+                    "Super fast, efficient, and courteous service! If you need a
+                    quick manicure before an event, look no further."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper pagination/controls -->
+          <div class="swiper-pagination mt-8"></div>
+        </div>
+        <style>
+          .testimonial-swiper .swiper-pagination {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative !important;
+            width: 100% !important;
+            z-index: 10;
+          }
+          .testimonial-swiper .swiper-pagination-bullet {
+            background: #c2a954 !important; /* Replace with gold */
+            opacity: 0.6 !important;
+            transition: opacity 0.25s;
+            width: 13px;
+            height: 13px;
+            margin: 0 6px !important;
+            box-shadow: 0 2px 8px #dac18155;
+          }
+          .testimonial-swiper .swiper-pagination-bullet-active {
+            opacity: 1 !important;
+            background: #b39036 !important;
+            box-shadow: 0 0 0 2.5px #fff7aecc;
+          }
+        </style>
+
+        <!-- Swiper JS (cdn) -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var testimonialSwiper = new Swiper(".testimonial-swiper", {
+              slidesPerView: 1,
+              spaceBetween: 32,
+              loop: true,
+              speed: 650,
+              autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              },
+              pagination: {
+                el: ".testimonial-swiper .swiper-pagination",
+                clickable: true,
+              },
+              breakpoints: {
+                768: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+              },
+            });
+
+            // For animation fade-in on visible
+            var testSwiper = document.querySelector(".testimonial-swiper");
+            if (window.IntersectionObserver && testSwiper) {
+              var obs = new window.IntersectionObserver(
+                function (ents, observer) {
+                  ents.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                      testSwiper.classList.add("visible");
+                      observer.unobserve(testSwiper);
+                    }
+                  });
+                },
+                { threshold: 0.13 }
+              );
+              obs.observe(testSwiper);
+            }
+          });
+        </script>
+        <!-- <div class="mt-12 flex justify-center"> ... </div> -->
+      </div>
+      <style>
+        .shimmer-effect {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          border-radius: inherit;
+          z-index: 2;
+          pointer-events: none;
+          background: linear-gradient(
+            120deg,
+            transparent 30%,
+            rgba(255, 255, 255, 0.11) 50%,
+            transparent 70%
+          );
+          width: 120%;
+          height: 100%;
+          transform: translateX(-70%);
+          opacity: 0;
+        }
+        .shimmer-effect.active {
+          animation: shimmer-move 1.15s cubic-bezier(0.4, 0.1, 0.5, 1) 0s 1
+            forwards;
+          opacity: 1;
+        }
+        @keyframes shimmer-move {
+          0% {
+            transform: translateX(-70%);
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            transform: translateX(70%);
+            opacity: 0;
+          }
+        }
+        .fade-in-up-testimonials {
+          opacity: 0;
+          transform: translateY(40px);
+          transition: opacity 0.8s cubic-bezier(0.23, 0.98, 0, 0.98),
+            transform 0.8s cubic-bezier(0.23, 0.98, 0, 0.98);
+        }
+        .fade-in-up-testimonials.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      </style>
+      <script>
+        // Hiệu ứng shimmer testimonials
+        (function () {
+          const cards = document.querySelectorAll(".testimonial-card-shimmer");
+          cards.forEach((card) => {
+            const shimmer = card.querySelector(".shimmer-effect");
+            let shimmerRun = false;
+
+            card.addEventListener("mouseenter", function () {
+              if (!shimmerRun) {
+                shimmer.classList.add("active");
+                shimmerRun = true;
+              }
+            });
+
+            shimmer.addEventListener("animationend", function () {
+              shimmer.classList.remove("active");
+              setTimeout(() => {
+                shimmerRun = false;
+              }, 10);
+            });
+          });
+        })();
+
+        // Hiệu ứng xuất hiện testimonials (từng phần)
+        (function () {
+          document.addEventListener("DOMContentLoaded", function () {
+            const fadeEls = document.querySelectorAll(
+              ".fade-in-up-testimonials"
+            );
+            if (!fadeEls.length) return;
+            let delayBase = 0.11;
+            fadeEls.forEach(function (el, idx) {
+              if (!el.style.transitionDelay) {
+                el.style.transitionDelay = delayBase * idx + "s";
+              }
+            });
+            const options = { threshold: 0.14 };
+            const obs = new window.IntersectionObserver(function (
+              entries,
+              observer
+            ) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            options);
+            fadeEls.forEach(function (el) {
+              obs.observe(el);
+            });
+          });
+        })();
+      </script>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-14 bg-[#020202] transition-all">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div
+          class="w-full flex items-center justify-center mb-8 fade-in-up-faq"
+          style="transition-delay: 0.08s"
+        >
+          <h2
+            class="text-center text-3xl md:text-4xl lg:text-5xl font-black tracking-wide"
+            style="
+              background: linear-gradient(to bottom, #b88b28, #edca7b, #b88b28);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            FREQUENTLY ASKED QUESTIONS
+          </h2>
+        </div>
+        <div class="max-w-3xl mx-auto space-y-4 fade-in-up-faq" style="transition-delay: 0.15s">
+          <details class="group transition-all rounded-xl border border-gold/30 bg-transparent px-6 py-5 shadow hover:shadow-md duration-300 overflow-hidden">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-lg text-white outline-none transition-colors group-open:text-[#edca7b]">
+              Where is EVA Nails and Spa located?
+              <svg class="ml-2 h-5 w-5 text-[#edca7b] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="mt-3 text-white text-base leading-relaxed answer-content">
+              We are located at 640 W First St Ste E, Tustin, CA 92780, easily accessible with convenient parking.
+            </div>
+          </details>
+
+          <details class="group transition-all rounded-xl border border-gold/30 bg-transparent px-6 py-5 shadow hover:shadow-md duration-300 overflow-hidden">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-lg text-white outline-none transition-colors group-open:text-[#edca7b]">
+              What are your operating hours?
+              <svg class="ml-2 h-5 w-5 text-[#edca7b] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="mt-3 text-white text-base leading-relaxed answer-content">
+              We’re open Monday to Sunday from 8:00 AM to 7:00 PM,
+            </div>
+          </details>
+
+          <details class="group transition-all rounded-xl border border-gold/30 bg-transparent px-6 py-5 shadow hover:shadow-md duration-300 overflow-hidden">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-lg text-white outline-none transition-colors group-open:text-[#edca7b]">
+              Do I need to book an appointment in advance?
+              <svg class="ml-2 h-5 w-5 text-[#edca7b] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="mt-3 text-white text-base leading-relaxed answer-content">
+              Yes, we recommend booking in advance to ensure availability, especially during weekends.
+            </div>
+          </details>
+
+          <details class="group transition-all rounded-xl border border-gold/30 bg-transparent px-6 py-5 shadow hover:shadow-md duration-300 overflow-hidden">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-lg text-white outline-none transition-colors group-open:text-[#edca7b]">
+              Do you accept walk-ins?
+              <svg class="ml-2 h-5 w-5 text-[#edca7b] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="mt-3 text-white text-base leading-relaxed answer-content">
+              Walk-ins are welcome based on availability, but appointments are preferred.
+            </div>
+          </details>
+
+          <details class="group transition-all rounded-xl border border-gold/30 bg-transparent px-6 py-5 shadow hover:shadow-md duration-300 overflow-hidden">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-lg text-white outline-none transition-colors group-open:text-[#edca7b]">
+              What services do you offer?
+              <svg class="ml-2 h-5 w-5 text-[#edca7b] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="mt-3 text-white text-base leading-relaxed answer-content">
+              We offer manicures, pedicures, gel polish, spa treatments, and deluxe packages.
+            </div>
+          </details>
+
+          <details class="group transition-all rounded-xl border border-gold/30 bg-transparent px-6 py-5 shadow hover:shadow-md duration-300 overflow-hidden">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-lg text-white outline-none transition-colors group-open:text-[#edca7b]">
+              Do you offer nail services for men?
+              <svg class="ml-2 h-5 w-5 text-[#edca7b] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="mt-3 text-white text-base leading-relaxed answer-content">
+              bsolutely. Our services are designed for everyone — men are welcome and well cared for.
+            </div>
+          </details>
+
+          <details class="group transition-all rounded-xl border border-gold/30 bg-transparent px-6 py-5 shadow hover:shadow-md duration-300 overflow-hidden">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-lg text-white outline-none transition-colors group-open:text-[#edca7b]">
+              Can I request a specific technician?
+              <svg class="ml-2 h-5 w-5 text-[#edca7b] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="mt-3 text-white text-base leading-relaxed answer-content">
+              Yes, you may request your preferred technician when booking.
+            </div>
+          </details>
+
+          <details class="group transition-all rounded-xl border border-gold/30 bg-transparent px-6 py-5 shadow hover:shadow-md duration-300 overflow-hidden">
+            <summary class="flex cursor-pointer items-center justify-between font-semibold text-lg text-white outline-none transition-colors group-open:text-[#edca7b]">
+              Do you offer gift cards?
+              <svg class="ml-2 h-5 w-5 text-[#edca7b] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="mt-3 text-white text-base leading-relaxed answer-content">
+              Yes, we offer elegant gift cards — perfect for birthdays, holidays, or special occasions.
+            </div>
+          </details>
+          <details
+            class="group transition-all rounded-xl border border-gold/30 bg-transparent px-6 py-5 shadow hover:shadow-md duration-300 overflow-hidden"
+          >
+            <summary
+              class="flex cursor-pointer items-center justify-between font-semibold text-lg text-white outline-none transition-colors group-open:text-[#edca7b]"
+            >
+            Is there a cancellation policy?
+              <svg
+                class="ml-2 h-5 w-5 text-[#edca7b] transition-transform duration-300 group-open:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div
+              class="mt-3 text-white text-base leading-relaxed answer-content"
+            >
+            Yes. We kindly ask for at least 24 hours’ notice for cancellations or rescheduling.
+            </div>
+          </details>
+      </div>
+      <script>
+        // Improved Accordion FAQ: mượt hơn, chuyển động mềm mại khi mở/đóng
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll("#faq details").forEach(function (details) {
+            const answer = details.querySelector(".answer-content");
+            if (!answer) return;
+
+            // Remove inline maxHeight for reset
+            answer.style.removeProperty("maxHeight");
+
+            // Initial state
+            if (!details.open) {
+              answer.style.maxHeight = "0";
+              answer.style.opacity = "0";
+            } else {
+              answer.style.maxHeight = answer.scrollHeight + "px";
+              answer.style.opacity = "1";
+            }
+
+            // Animate open & close with pointerup (click is less smooth for details)
+            details.addEventListener("toggle", function () {
+              if (details.open) {
+                answer.style.transition = "none";
+                // force repaint for cancel previous transitions
+                void answer.offsetWidth;
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                answer.style.opacity = "1";
+                answer.style.transition =
+                  "max-height 0.5s cubic-bezier(0.45,0,0.55,1), opacity 0.35s cubic-bezier(0.7,0,0.84,0)";
+                // After transition, remove maxHeight for dynamic resizing
+                setTimeout(() => {
+                  if (details.open) answer.style.maxHeight = "none";
+                }, 500);
+              } else {
+                // Set height explicitly before closing, then animate to zero
+                answer.style.transition = "none";
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                answer.style.opacity = getComputedStyle(answer).opacity || "1";
+                // Force repaint
+                void answer.offsetWidth;
+                answer.style.transition =
+                  "max-height 0.5s cubic-bezier(0.45,0,0.55,1), opacity 0.28s cubic-bezier(0.7,0,0.84,0)";
+                answer.style.maxHeight = "0";
+                answer.style.opacity = "0";
+              }
+            });
+
+            // Prevent jumpiness when clicking summary
+            const summary = details.querySelector("summary");
+            let selfToggle = false;
+            summary.addEventListener("click", () => {
+              selfToggle = true;
+            });
+
+            // Listen for maxHeight removal after transition
+            answer.addEventListener("transitionend", function (e) {
+              // e.propertyName can be 'max-height' or 'opacity'
+              if (details.open) {
+                answer.style.transition = "";
+                answer.style.maxHeight = "none";
+                answer.style.opacity = "1";
+              } else {
+                answer.style.transition = "";
+              }
+            });
+
+            // Close others for classic accordion style (optional)
+            // document.querySelectorAll('#faq details').forEach(function (other) {
+            //   if (other !== details) other.removeAttribute('open');
+            // });
+          });
+        });
+      </script>
+      <style>
+        #faq details[open] .answer-content {
+          /* mượt hơn: dùng cả fade và grow, không nhảy khựng */
+          animation: faqOpenSoft 0.5s cubic-bezier(0.45, 0, 0.55, 1);
+        }
+        #faq .answer-content {
+          overflow: hidden;
+          max-height: 0;
+          opacity: 0;
+          transition: max-height 0.5s cubic-bezier(0.45, 0, 0.55, 1),
+            opacity 0.35s cubic-bezier(0.7, 0, 0.84, 0);
+          will-change: max-height, opacity;
+        }
+        @keyframes faqOpenSoft {
+          0% {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        #faq summary::-webkit-details-marker {
+          display: none;
+        }
+        #faq summary {
+          user-select: none;
+        }
+      </style>
+    </section>
+
+    <!-- Booking CTA -->
+    <section id="booking" class="relative py-16 md:py-24 bg-[#191919]">
+      <div class="container max-w-[900px] flex flex-col items-center justify-center">
+        <div
+          class="overflow-hidden rounded-3xl border border-gold/40 drop-shadow-lg p-8 shadow-glow md:p-10 flex flex-col items-center justify-center"
+        >
+          <div class="flex flex-col items-center justify-center gap-8 w-full text-center">
+            <div>
+              <h3
+                class="font-display text-2xl md:text-3xl text-[#edca7b] drop-shadow-sm text-center"
+              >
+                Book Your Appointment Today
+              </h3>
+              <p class="mt-3 text-white/85 font-medium text-center">
+                We will confirm your appointment within 10 minutes during
+                business hours.
+              </p>
+              <div class="mt-5 flex items-center justify-center">
+                <a
+                  href="https://book.gocheckin.net/v3/nails/eva-nails-and-lashes-18980/choose-service"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-[#edca7b] to-[#b88b28] text-black font-bold text-base shadow-glow hover:scale-105 transition-transform duration-200"
+                  style="box-shadow:0 2px 16px #edca7b44;"
+                >
+                  <svg class="w-5 h-5 text-[#b88b28]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 8.25C16.5 7.00736 15.4926 6 14.25 6H7.5C6.25736 6 5.25 7.00736 5.25 8.25V15.75C5.25 16.9926 6.25736 18 7.5 18h6.75C15.9926 18 17 16.9926 17 15.75V10.5m-4.75 4.25l7-7m0 0v4.5m0-4.5h-4.5" /></svg>
+                  <span>Book Now Instantly</span>
+                </a>
+              </div>
+            </div>
+            <!-- <form class="space-y-3 w-full flex flex-col items-center">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="w-full max-w-md rounded-xl border border-gold/40 bg-white px-4 py-3 placeholder:text-black focus:border-gold focus:outline-none text-black text-center"
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                class="w-full max-w-md rounded-xl border border-gold/40 bg-white px-4 py-3 placeholder:text-black focus:border-gold focus:outline-none text-black text-center"
+              />
+              <select
+                class="w-full max-w-md rounded-xl border border-gold/40 bg-white px-4 py-3 focus:border-gold focus:outline-none text-black text-center"
+              >
+                <option>Select a Service</option>
+                <option>Basic Nails</option>
+                <option>Premium Design</option>
+                <option>Hand & Foot Spa</option>
+              </select>
+              <button
+                type="submit"
+                class="w-full max-w-md rounded-xl bg-[#edca7b] px-6 py-3 font-semibold text-black shadow-glow transition hover:bg-gold/90"
+              >
+                Submit Request
+              </button>
+              <p class="text-xs text-white/70 text-center">
+                By submitting, you agree to our terms and privacy policy.
+              </p>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="relative border-t border-gold/10 bg-[#191919]">
+      <div class="container max-w-[1200px] py-16">
+        <div class="grid gap-10 md:grid-cols-4">
+          <div class="md:col-span-2">
+            <div class="flex items-center gap-4">
+              <span
+                class="inline-block h-10 w-10 rounded-full bg-gold overflow-hidden"
+              >
+                <img
+                  src="./img/logo.jpg"
+                  alt="Eva Nails & Lashes Logo"
+                  class="w-full h-full rounded-full object-cover shadow-lg border-2 border-[#ffd7d8] bg-white"
+                  loading="lazy"
+                />
+              </span>
+              <span class="font-display text-2xl font-bold"
+                style="
+                  background: linear-gradient(to bottom, #b88b28, #edca7b, #b88b28);
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                EVA Nails & Lashes
+              </span>
+              
+            </div>
+            <p class="mt-5 max-w-md text-lg text-white font-medium">
+              Elevate the beauty of your hands with elegance, sophistication,
+              and luxury.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg text-[#edca7b]">Contact</h4>
+            <ul class="mt-4 space-y-3 text-base text-white font-medium">
+              <li>Email: eva.nails.lashes1@gmail.com</li>
+              <li>
+                TikTok:
+                <a
+                  href="https://www.tiktok.com/@_eva.nails_lashes"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-white hover:underline"
+                >
+                  _eva.nails_lashes
+                </a>
+              </li>
+              <li>
+                Instagram:
+                <a
+                  href="https://www.instagram.com/_eva.nails_lashes1/"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-white hover:underline"
+                >
+                  _eva.nails_lashes1
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg text-[#edca7b]">Opening Hours</h4>
+            <ul class="mt-4 space-y-3 text-base text-white font-medium">
+              <li>Mon - Sun: 8:00 AM - 9:00 PM</li>
+              <li>Appointments outside opening hours accepted</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-12 rounded-2xl border border-gold/10">
+          <iframe
+            title="Map"
+            class="h-64 w-full rounded-2xl"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.5985278417293!2d-117.83312832439945!3d33.74519617327416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdb58e0a1d223%3A0x371d65ed04d714db!2sEva%20Nails%20%26%20Lashes!5e0!3m2!1sen!2sus!4v1760543094832!5m2!1sen!2sus"
+          ></iframe>
+        </div>
+        <div
+          class="mt-10 flex flex-col items-center justify-between gap-6 border-t border-gold/10 pt-8 text-base text-white/60 md:flex-row"
+        >
+          <div>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Eva Nails & Lashes. All rights reserved.
+          </div>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-gold transition font-medium"
+              >Terms of Service</a
+            >
+            <a href="#" class="hover:text-gold transition font-medium"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Social button ripple animations -->
+    <style>
+      .animate-ripple-1 {
+        animation: ripple 2s linear infinite;
+      }
+      .animate-ripple-2 {
+        animation: ripple 2s linear 0.5s infinite;
+      }
+      .animate-ripple-3 {
+        animation: ripple 2s linear 1s infinite;
+      }
+      .animate-wiggle {
+        animation: wiggle 1s ease-in-out infinite;
+      }
+      @keyframes ripple {
+        0% {
+          transform: scale(0.8);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(2.4);
+          opacity: 0;
+        }
+      }
+      @keyframes wiggle {
+        0%,
+        100% {
+          transform: rotate(-3deg);
+        }
+        50% {
+          transform: rotate(3deg);
+        }
+      }
+    </style>
+
+    <!-- Social Media Links -->
+    <div class="fixed bottom-28 right-6 transform flex flex-col gap-5 z-10">
+      <div class="relative group ml-auto">
+        <div
+          class="absolute inset-0 w-12 h-12 rounded-full animate-ripple-1 bg-[#b88b28]"
+        ></div>
+        <div
+          class="absolute inset-0 w-12 h-12 rounded-full animate-ripple-2 bg-[#b88b28]"
+        ></div>
+        <div
+          class="absolute inset-0 w-12 h-12 rounded-full animate-ripple-3 bg-[#b88b28]"
+        ></div>
+        <a
+          href="tel:+12095334828"
+          class="relative flex items-center"
+          tabindex="0"
+          aria-label="Call"
+        >
+          <div
+            class="w-12 h-12 bg-[#b88b28] rounded-full flex items-center justify-center shadow-lg relative animate-wiggle"
+          >
+            <i class="fa-solid fa-phone text-white"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Back to top -->
+    <!-- Nút quay lại đầu trang -->
+    <button
+      id="back-to-top"
+      class="fixed bottom-6 right-6 z-50 bg-[#b88b28] hover:bg-[#edca7b] text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 invisible transform translate-y-4 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-white"
+      aria-label="Back to top"
+      type="button"
+      tabindex="0"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+    </button>
+
+    <script>
+      // Smooth scrolling cho các link điều hướng nội trang
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          // Loại trừ trường hợp href="#"
+          if (href && href !== "#") {
+            e.preventDefault();
+            const targetEl = document.querySelector(href);
+            if (targetEl) {
+              targetEl.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          }
+          // Đóng mobile sidebar nếu đang mở (nếu có hàm này)
+          if (typeof closeMobileSidebar === "function") closeMobileSidebar();
+        });
+      });
+
+      // Back to Top button
+      const backToTopButton = document.getElementById("back-to-top");
+
+      // Hiện/ẩn nút khi scroll
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove(
+            "opacity-0",
+            "invisible",
+            "translate-y-4"
+          );
+          backToTopButton.classList.add(
+            "opacity-100",
+            "visible",
+            "translate-y-0"
+          );
+        } else {
+          backToTopButton.classList.add(
+            "opacity-0",
+            "invisible",
+            "translate-y-4"
+          );
+          backToTopButton.classList.remove(
+            "opacity-100",
+            "visible",
+            "translate-y-0"
+          );
+        }
+      });
+
+      // Khi bấm vào nút quay lên đầu trang
+      backToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // Hỗ trợ truy cập bằng bàn phím (Enter hoặc Space)
+      backToTopButton.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
